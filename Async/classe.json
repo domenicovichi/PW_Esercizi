@@ -1,0 +1,18 @@
+{
+    "nome": "5H",
+    "numeroAlunni": 24,
+    "scuolaSabato":false,
+    "scuola":"enrico fermi",
+    "insegnanti": [
+        {
+            "nome":"Anna",
+            "cognome":"Blu",
+            "materiaInsegnata":"Matematica" 
+        },
+        {
+            "nome":"pippo",
+            "cognome":"rossi",
+            "materiaInsegnata":"italiano" 
+        }
+    ]   
+}

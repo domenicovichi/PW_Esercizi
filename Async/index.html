@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Vai</button>
+
+    <script>
+      /*Questo è un esempio di codice sincrono, finchè c'è l'alert non può renderizzare il paragrafo.
+
+        const btn = document.querySelector("button");
+        btn.addEventListener('click',() =>{
+            alert("you clicked me!");
+            let pElem = document.createElement('p');
+            pElem.textContent ="This is a new added paragraph";
+            document.body.appendChild(pElem);
+
+        });*/
+
+
+
+        fetch('classe.json').then(function (response){ 
+            return response.json();
+        }).then(function(json){
+            classe = json;
+            console.log('Dati:', classe);
+        }).catch(function(err){
+            console.log('Fetch problem '+ err.message);
+        });
+    </script>
+  </body>
+</html>
