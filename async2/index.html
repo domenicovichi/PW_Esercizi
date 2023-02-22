@@ -8,13 +8,13 @@
   </head>
   <body>
     <script>
-      //creare una promise da zero
+      //creare una promise da
 
       function timeOutPromise(message, interval) {
         return new Promise((resolve, reject) => {
-          if (message === "" || typeof message !== 'string') {
+          if (message === "" || typeof message !== "string") {
             reject("Message is empty or not a String");
-          } else if (interval < 0 || typeof interval !== 'number') {
+          } else if (interval < 0 || typeof interval !== "number") {
             reject("interval is negative or not a number");
           } else {
             setTimeout(function () {
@@ -23,7 +23,7 @@
           }
         });
       }
-      timeOutPromise('Hello there', 2000)
+      timeOutPromise("Hello there", 2000)
         .then((message) => {
           alert(message);
         })
